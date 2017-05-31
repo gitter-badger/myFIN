@@ -1,5 +1,5 @@
 # myFIN [![Build Status](https://travis-ci.org/dudu84/myFIN.svg?branch=master)](https://travis-ci.org/dudu84/myFIN)
-Money Manager developed in Angular 1.6 and Node.js using MongoDB to store the data.
+Money Manager developed in Angular 1.6 and Node.js with MongoDB.
 
 ## Environment set up
 1 - Clone this repository: ```git clone https://github.com/dudu84/myFIN```
