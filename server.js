@@ -20,5 +20,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api + json'}));
 app.use(methodOverride());
 
+app.get('/', function(req, res) {
+	res.sendStatus(200);
+});
+
 app.listen(4000);
 console.log('Server started at port 4000.');
