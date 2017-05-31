@@ -3,7 +3,7 @@
  * May 30th, 2017
  */
 
-var expect = require("chai").expect;
+var expect = require('chai').expect;
 var request = require('request');
 
 describe('GET /', function() {
