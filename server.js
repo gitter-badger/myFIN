@@ -22,7 +22,7 @@ app.use(bodyParser.json({ type: 'application/vnd.api + json'}));
 app.use(methodOverride());
 
 app.get('/', function(req, res) {
-	res.redirect(200, 'index.html')
+	res.redirect(200, 'index.html');
 });
 
 module.exports = app;

@@ -7,26 +7,20 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
-        nodemon : {
-           dev : {
-               script : 'server.js'
-           }
-        },
-
-        jshint: {
-          files: ['Gruntfile.js', 'server.js', 'test/*.js']
+       
+       jshint: {
+          files: ['Gruntfile.js', 'server.js', 'test/*.js', 'public/js/**/*.js']
         },
         
         watch: {
-           files: ['<%=jshint.files%>'],
+           files: ['<%= jshint.files %>'],
            tasks: ['jshint'],
         }      
     });
 
-    grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');	
 
-    grunt.registerTask('default', ['nodemon','jshint']);
+    grunt.registerTask('default', ['watch','jshint']);
 
 };
