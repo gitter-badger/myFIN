@@ -8,6 +8,14 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
        
+       notify_hooks: {
+          options: {
+            enabled: true,
+            title: 'myFIN',
+            duration: 5
+          }
+       },
+
        jshint: {
           files: ['Gruntfile.js', 'server.js', 'test/*.js', 'public/js/**/*.js']
         },
@@ -19,8 +27,10 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-watch');	
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-notify');
 
+    grunt.task.run('notify_hooks');
     grunt.registerTask('default', ['jshint', 'watch']);
 
 };
