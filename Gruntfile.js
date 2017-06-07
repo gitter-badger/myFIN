@@ -17,7 +17,7 @@ module.exports = function(grunt) {
        },
 
        jshint: {
-          files: ['Gruntfile.js', 'server.js', 'test/*.js', 'public/js/**/*.js']
+          files: ['Gruntfile.js', 'server.js', 'test/*.js','test/**/*.js', 'public/js/**/*.js']
         },
         
         watch: {

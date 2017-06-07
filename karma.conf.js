@@ -15,6 +15,12 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+        './node_modules/angular/angular.js',                             // angular
+        './node_modules/angular-ui-router/release/angular-ui-router.js', // ui-router
+        './node_modules/angular-mocks/angular-mocks.js',                 // mocks
+        './public/js/user/userService.js',                               // Users factory
+        './public/appRouter.js',
+        './test/specs/user/*.js'
     ],
 
 
@@ -32,7 +38,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['spec'],
 
 
     // web server port
@@ -48,7 +54,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
 
-    // enable / disable watching file and executing tests whenever any file changes
+    // enable / disable watching file and executing test whenever any file changes
     autoWatch: true,
 
 
@@ -58,7 +64,7 @@ module.exports = function(config) {
 
 
     // Continuous Integration mode
-    // if true, Karma captures browsers, runs the tests and exits
+    // if true, Karma captures browsers, runs the test and exits
     singleRun: false,
 
     // Concurrency level
