@@ -27,4 +27,4 @@ app.get('/', function(req, res) {
 
 module.exports = app;
 app.listen(4000);
-console.log('Server started at port 4000.');
+console.log('myFIN started at port 4000.');
