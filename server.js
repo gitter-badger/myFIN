@@ -5,7 +5,6 @@
  */
 
 var express = require('express');
-
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var mongose = require('mongoose');
@@ -21,9 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.json({ type: 'application/vnd.api + json'}));
 app.use(methodOverride());
 
-app.get('/', function(req, res) {
-	res.redirect(200, 'index.html');
-});
+var routes = require('./src/routes')(app);
 
 module.exports = app;
 app.listen(4000);

@@ -2,18 +2,24 @@
 <html>
 	<head>
 		<title>myFIN - Money Manager</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <style>
+            .navbar { border-radius:0; }
+        </style>
 		<script src="/node_modules/angular/angular.min.js"></script>
 		<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="appRouter.js"></script>
 	</head>
-	<body ng-app="">
-		<div>
-			<label for="username">Username</label><input type="text" name="username" ng-model="username"/>
-		</div>
-		<div>
-			<label for="password">Password</label><input type="text" name="password" ng-model="password"/>
-		</div>
-		<div>
-			<label for="passwordRetype">Retype password</label><input type="text" name="passwordRetype" ng-model="passwordRetype"/>
-		</div>		
+	<body ng-app="myFin">
+		Hi there!<br/>
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="newUser">Home</a></li>
+
+            </ul>
+        </nav>
 	</body>	
 </html>

@@ -18,6 +18,7 @@
   "homepage": "https://github.com/dudu84/myFIN#readme",
   "dependencies": {
     "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "http": "0.0.0",
@@ -26,7 +27,6 @@
     "morgan": "^1.8.2"
   },
   "devDependencies": {
-    "@uirouter/angularjs": "latest",
     "angular-mocks": "^1.6.4",
     "chai": "^4.0.0",
     "grunt": "^1.0.1",
