@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
 var UserSchema = Schema ({
    name: {
@@ -7,7 +7,7 @@ var UserSchema = Schema ({
        required: true
    },
 
-   userName: {
+   username: {
        type: String,
        required: true
    },

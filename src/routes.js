@@ -1,5 +1,10 @@
+var userController = require('./user/userController');
+
 module.exports = function(app) {
-    app.get('/user', function(req, res) {
-        res.send(200, 'newUser.html');
+
+    //adds a new User
+    app.post('/api/newUser', function(req, res) {
+        console.log('[route]: routing /api/newUser');
+        userController.newBook(req, res);
     });
 };
