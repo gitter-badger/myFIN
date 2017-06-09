@@ -7,7 +7,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var mongose = require('mongoose');
+var mongoose = require('mongoose');
 var morgan = require('morgan');
 
 var app = express();
@@ -21,6 +21,10 @@ app.use(bodyParser.json({ type: 'application/vnd.api + json'}));
 app.use(methodOverride());
 
 var routes = require('./src/routes')(app);
+
+//avoid deprecation warning
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/myFin');
 
 module.exports = app;
 app.listen(4000);
