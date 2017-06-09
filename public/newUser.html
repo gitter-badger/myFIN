@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html ng-app="myFin">
-	<head>
-		<title>myFIN - Money Manager</title>
-		<script src="/node_modules/angular/angular.min.js"></script>
-		<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-		<script src="js/user/userController.js"></script>
-		<script src="appRouter.js"></script>
-	</head>
-	<body ng-controller="userController">
+
+	<div ng-controller="UserController as uc">
 		<div>
-			<label for="username">Username</label><input type="text" name="username" ng-model="username"/>
+			<label for="name">Name</label><input type="text" id="name" ng-model="uc.formData.name"/>
 		</div>
 		<div>
-			<label for="password">Password</label><input type="text" name="password" ng-model="password"/>
+			<label for="username">Username</label><input type="text" id="username" ng-model="uc.formData.username"/>
 		</div>
 		<div>
-			<label for="passwordRetype">Retype password</label><input type="text" name="passwordRetype" ng-model="passwordRetype"/>
-		</div>		
-	</body>	
-</html>
+			<label for="password">Password</label><input type="text" id="password" ng-model="uc.formData.password"/>
+		</div>
+		<div>
+			<label for="passwordRetype">Retype password</label><input type="text" id="passwordRetype" ng-model="uc.formData.passwordRetype"/>
+		</div>
+		<div>
+			<button type="submit" ng-click="uc.createUser()">add</button>
+		</div>
+	</div>

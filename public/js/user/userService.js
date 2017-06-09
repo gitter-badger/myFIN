@@ -4,7 +4,7 @@
    angular.module('users', [])
    .factory('Users', function() {
       var Users = {};
-
+        console.log('asdasd');
       var userList = [
            {
                id: '1',
