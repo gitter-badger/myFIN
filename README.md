@@ -1,4 +1,6 @@
 # myFIN [![Build Status](https://travis-ci.org/dudu84/myFIN.svg?branch=master)](https://travis-ci.org/dudu84/myFIN)
+
+[![Join the chat at https://gitter.im/myFinancesMannager/Lobby](https://badges.gitter.im/myFinancesMannager/Lobby.svg)](https://gitter.im/myFinancesMannager/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Money Manager developed in Angular 1.6 and Node.js with MongoDB.
 
 ## Environment set up
